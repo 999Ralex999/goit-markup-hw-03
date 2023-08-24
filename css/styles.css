@@ -20,6 +20,12 @@
   | Base styles
   |============================
 */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: var(--main-font);
     color: var(--slate);
@@ -27,6 +33,16 @@ body {
 }
 
 /* reset style start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
 address {
     font-style: normal;
 }
@@ -37,6 +53,8 @@ img {
 
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .link {
@@ -47,19 +65,26 @@ img {
 }
 
 .btm {
+    min-width: 69px;
+    min-height: 48px;
     font-family: inherit;
+    border: 1px solid transparent;
     cursor: pointer;
     color: currentColor;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    border-radius: 4px;
+
 }
 
 /* reset style end */
 .btm-dark-accent {
     color: var(--white);
     background-color: var(--iris);
+    padding: 16px 32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .btm-portfolia-first:hover,
@@ -67,6 +92,7 @@ img {
     color: var(--white);
     text-align: center;
     background-color: var(--ocean);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .btm-portfolia-first {
@@ -74,11 +100,17 @@ img {
     text-align: center;
     border: 1px solid var(--cornflower);
     background-color: var(--cloud);
+    padding: 12px 24px;
 }
 
 .btm-dark-accent:hover,
 .btm-dark-accent:focus {
     background-color: var(--ocean);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.portfolia-btm-list {
+    display: flex;
 }
 
 .title {
@@ -102,6 +134,35 @@ img {
   | Header styles 2 page
   |============================
 */
+.header .conteiner {
+    display: flex;
+}
+
+.header-logo {
+    display: inline-flex;
+    height: 24px;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 156px;
+    margin-right: 56px;
+
+}
+
+.header-nav {
+    margin-right: 332px;
+}
+
+.header-nav-list {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.header-address-list {
+    display: flex;
+    gap: 40px;
+}
 
 .header-logo,
 .footer-logo {
@@ -153,6 +214,8 @@ img {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    width: 496px;
+    margin-bottom: 48px;
 }
 
 /**
@@ -174,9 +237,6 @@ img {
   | Team
   |============================
 */
-.team {
-    background-color: var(--cloud);
-}
 
 .team-list {
     background-color: var(--white);
