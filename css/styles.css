@@ -1,0 +1,240 @@
+/**
+  |============================
+  | Root
+  |============================
+*/
+:root {
+    --navyblue: #2E2F42;
+    --cloud: #F4F4FD;
+    --white: #FFF;
+    --iris: #4D5AE5;
+    --ocean: #404BBF;
+    --cornflower: #E7E9FC;
+    --slate: #434455;
+    --main-font: 'Roboto', sans-serif;
+    --logo-font: Raleway, sans-serif;
+}
+
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+body {
+    font-family: var(--main-font);
+    color: var(--slate);
+    background-color: var(--white);
+}
+
+/* reset style start */
+address {
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    color: currentColor;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.btm {
+    font-family: inherit;
+    cursor: pointer;
+    color: currentColor;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+/* reset style end */
+.btm-dark-accent {
+    color: var(--white);
+    background-color: var(--iris);
+}
+
+.btm-portfolia-first:hover,
+.btm-portfolia-first:focus {
+    color: var(--white);
+    text-align: center;
+    background-color: var(--ocean);
+}
+
+.btm-portfolia-first {
+    color: var(--iris);
+    text-align: center;
+    border: 1px solid var(--cornflower);
+    background-color: var(--cloud);
+}
+
+.btm-dark-accent:hover,
+.btm-dark-accent:focus {
+    background-color: var(--ocean);
+}
+
+.title {
+    color: var(--navyblue);
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.text {
+    color: var(--slate);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+
+/**
+  |============================
+  | Header styles 2 page
+  |============================
+*/
+
+.header-logo,
+.footer-logo {
+    color: var(--iris);
+    font-family: var(--logo-font);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.header-logo-accent,
+.footer-logo-accent {
+    color: var(--navyblue);
+    font-family: var(--logo-font);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.header-nav-link {
+    color: var(--navyblue);
+    font-family: var(--main-font);
+    font-weight: 500;
+}
+
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-address-link:hover,
+.header-address-link:focus {
+    color: var(--ocean);
+}
+
+/**
+  |============================
+  | Dark section
+  |============================
+*/
+.dark {
+    background-color: var(--navyblue);
+}
+
+.dark-title {
+    color: var(--white);
+    text-align: center;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+}
+
+/**
+  |============================
+  | Advantages section
+  |============================
+*/
+
+.advantages-subtitle {
+    color: var(--navyblue);
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+/**
+  |============================
+  | Team
+  |============================
+*/
+.team {
+    background-color: var(--cloud);
+}
+
+.team-list {
+    background-color: var(--white);
+}
+
+.team-item {
+    background-color: var(--white)
+}
+
+.team-subtitle {
+    color: var(--navyblue);
+    text-align: center;
+    line-height: 1.2;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.team-text {
+    text-align: center;
+}
+
+/**
+  |============================
+  | Footer
+  |============================
+*/
+.footer {
+    background-color: var(--navyblue);
+}
+
+.footer-logo-accent {
+    color: var(--cloud);
+}
+
+.footer-text {
+    color: var(--cloud);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/**
+  |============================
+  | porfolia main
+  |============================
+*/
+
+.portfolia-subtitle {
+    color: var(--navyblue);
+    line-height: 1.2;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.portfolia-text {
+    color: var(--slate);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
