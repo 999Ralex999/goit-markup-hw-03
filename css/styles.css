@@ -106,6 +106,7 @@ img {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin: 0 auto;
 }
 
 .btm-portfolia-first:hover,
@@ -113,6 +114,7 @@ img {
     color: var(--white);
     text-align: center;
     background-color: var(--ocean);
+    border: 1px solid transparent;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -153,9 +155,12 @@ img {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+/* .container {
     outline: 2px solid red;
     outline-offset: -2px;
-}
+} */
 
 /**
   |============================
@@ -226,6 +231,11 @@ img {
     text-transform: uppercase;
 }
 
+.footer-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .header-nav-link {
     color: var(--navyblue);
     font-family: var(--main-font);
@@ -256,6 +266,7 @@ img {
     line-height: 1.07;
     letter-spacing: 0.02em;
     max-width: 496px;
+    margin: 0 auto;
     margin-bottom: 48px;
 }
 
@@ -277,7 +288,10 @@ img {
 .advantages-list {
     display: flex;
     gap: 24px;
-    width: calc((100% -72px) / 4);
+}
+
+.advantages-item {
+    width: calc((100% - 72px) / 4);
 }
 
 .advantages {
@@ -286,16 +300,55 @@ img {
 
 /**
   |============================
-  | Team
+  | Actions section
   |============================
 */
+.actions {
+    padding-bottom: 120px;
+}
+
+.actions-list {
+    display: flex;
+    gap: 24px;
+}
+
+.actions-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.actions-title {
+    padding-bottom: 72px;
+}
+
+/**
+  |============================
+  | Team section
+  |============================
+*/
+.team {
+    padding: 120px 0;
+    background: var(--cloud);
+}
+
+.team-title {
+    margin-bottom: 72px;
+    gap: 24px;
+
+}
 
 .team-list {
+    display: flex;
     background-color: var(--white);
 }
 
 .team-item {
-    background-color: var(--white)
+    background-color: var(--white);
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-container {
+    padding: 32px 0;
 }
 
 .team-subtitle {
@@ -305,6 +358,7 @@ img {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team-text {
@@ -318,6 +372,7 @@ img {
 */
 .footer {
     background-color: var(--navyblue);
+    padding: 100px 0;
 }
 
 .footer-logo-accent {
@@ -328,6 +383,7 @@ img {
     color: var(--cloud);
     line-height: 1.5;
     letter-spacing: 0.02em;
+    max-width: 264px;
 }
 
 /**
@@ -335,6 +391,35 @@ img {
   | porfolia main
   |============================
 */
+.portfolia {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.portfolia-btm-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.portfolia-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolia-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolia-container {
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
+    margin-bottom: 8px;
+}
 
 .portfolia-subtitle {
     color: var(--navyblue);
